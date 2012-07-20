@@ -15,6 +15,7 @@
     <license>
       <name>GNU Lesser General Public License</name>
       <url>http://www.gnu.org/licenses/lgpl.html</url>
+      <distribution>repo</distribution>
     </license>
   </licenses>
 
@@ -136,4 +137,18 @@
       </plugins>
     </pluginManagement>
   </build>  
+
+  <scm>
+    <connection>scm:git:git@github.com:axiomalaska/cf4j.git</connection>
+    <url>scm:git:git@github.com:axiomalaska/cf4j.git</url>
+    <developerConnection>scm:git:git@github.com:axiomalaska/cf4j.git</developerConnection>
+  </scm>  
+
+  <developers>
+    <developer>
+      <id>shane-axiom</id>
+      <name>Shane StClair</name>
+      <email>shane@axiomalaska.com</email>
+    </developer>
+  </developers>  
 </project>

@@ -4,7 +4,7 @@ cf4j - CF Standard Names for Java
 This is a simple Java library providing constants for the [NetCDF Climate and
 Forecast Metadata Convention standard names](http://cf-pcmdi.llnl.gov/documents/cf-standard-names/).
 
-The artifact's version number is consistent with the version number of the CF names it contains.
+The artifact's major version number is consistent with the version number of the CF names it contains.
 
 The main class (CFStandardNames) is generated from the standard names xml document
 using xslt. To update, replace src/main/xml/cf-standard-name-table.xml with a 

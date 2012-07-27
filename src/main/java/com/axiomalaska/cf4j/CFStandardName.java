@@ -1,6 +1,6 @@
 package com.axiomalaska.cf4j;
 
-public class CFStandardName {
+public class CFStandardName implements Comparable<CFStandardName>{
     private String name;
     private String canonicalUnits;
     private String description;
@@ -46,5 +46,9 @@ public class CFStandardName {
     }
     public void setAmip(String amip) {
         this.amip = amip;
+    }
+
+    public int compareTo(CFStandardName o) {
+        return this.name.compareTo( o.getName() );
     }
 }

@@ -1,7 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
   <groupId>com.axiomalaska</groupId>
   <artifactId>cf4j</artifactId>
   <version>19.0-SNAPSHOT</version>
@@ -9,7 +13,7 @@
 
   <name>cf4j</name>
   <description>Java library containing the CF standard names</description>
-  <url>http://cf-pcmdi.llnl.gov/documents/cf-standard-names/</url>
+  <url>https://github.com/axiomalaska/cf4j</url>
 
   <licenses>
     <license>
@@ -19,32 +23,9 @@
     </license>
   </licenses>
 
-  <distributionManagement>
-    <repository>
-      <id>axiom_public_releases</id>
-      <name>Axiom Releases</name>
-      <uniqueVersion>false</uniqueVersion>
-      <url>http://nexus.axiomalaska.com/nexus/content/repositories/public-releases</url>
-    </repository>
-    <snapshotRepository>
-      <id>axiom_public_snapshots</id>
-      <name>Axiom Snapshots</name>
-      <uniqueVersion>false</uniqueVersion>
-      <url>http://nexus.axiomalaska.com/nexus/content/repositories/public-snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
-  <dependencies>
-    <dependency>
-      <groupId>edu.ucar</groupId>
-      <artifactId>netcdf</artifactId>
-      <version>4.2.20</version>
-    </dependency>     
-  </dependencies>
 
   <build>
     <plugins>
@@ -122,7 +103,7 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>      
+      </plugin>            
     </plugins>
 
     <pluginManagement>
@@ -157,6 +138,36 @@
       </plugins>
     </pluginManagement>
   </build>  
+
+  <profiles>
+    <profile>
+      <id>release-sign-artifacts</id>
+      <activation>
+        <property>
+          <name>performRelease</name>
+          <value>true</value>
+        </property>
+      </activation>
+
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>      
+        </plugins>    
+      </build>
+    </profile>    
+  </profiles>
 
   <scm>
     <connection>scm:git:git@github.com:axiomalaska/cf4j.git</connection>

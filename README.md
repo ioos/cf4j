@@ -10,14 +10,8 @@ The main class (CFStandardNames) is generated from the standard names xml docume
 using xslt. To update, replace src/main/xml/cf-standard-name-table.xml with a 
 fresh version and run mvn clean install.
 
-Standard Maven project documentation is available here:
-[http://axiomalaska.github.com/cf4j/]
-
-JavaDocs are available here:
-[http://axiomalaska.github.com/cf4j/apidocs/]
-
-JavaDocs for the standard name constants are available here:
-[http://axiomalaska.github.com/cf4j/apidocs/com/axiomalaska/cf4j/CFStandardNames.html]
+[Standard Maven project documentation is available](http://axiomalaska.github.com/cf4j/), including [JavaDocs](http://axiomalaska.github.com/cf4j/apidocs/)
+(see especially the [CF Standard Names JavaDoc](http://axiomalaska.github.com/cf4j/apidocs/com/axiomalaska/cf4j/CFStandardNames.html)). 
 
 To use in a Maven project
 -------------------------

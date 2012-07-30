@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  * CF Standard Names, version <xsl:value-of select="$majorVersion"/>. 
- * @see <a href="http://cf-pcmdi.llnl.gov/documents/cf-standard-names/">http://cf-pcmdi.llnl.gov/documents/cf-standard-names/</a>. 
+ * See &lt;a href="http://cf-pcmdi.llnl.gov/documents/cf-standard-names/"&gt;http://cf-pcmdi.llnl.gov/documents/cf-standard-names/&lt;/a&gt;. 
  */
 public class CFStandardNames {
     private static Collection&lt;CFStandardName&gt; allNames = new ArrayList&lt;CFStandardName&gt;();

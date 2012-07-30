@@ -3,14 +3,23 @@
 <xsl:variable name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'" />
 <xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
 <xsl:output method="text"/>
+<xsl:param name="majorVersion" />
 <xsl:template match="/">package com.axiomalaska.cf4j;
 
 import java.util.Collection;
 import java.util.ArrayList;
 
+/**
+ * CF Standard Names, version <xsl:value-of select="$majorVersion"/>. 
+ * @see <a href="http://cf-pcmdi.llnl.gov/documents/cf-standard-names/">http://cf-pcmdi.llnl.gov/documents/cf-standard-names/</a>. 
+ */
 public class CFStandardNames {
     private static Collection&lt;CFStandardName&gt; allNames = new ArrayList&lt;CFStandardName&gt;();
     <xsl:for-each select="standard_name_table/entry">
+    <xsl:choose>
+      <xsl:when test="description != ''">
+    /** <xsl:value-of select="translate( description, '&quot;', '')" /> */</xsl:when>
+    </xsl:choose>
     public static final CFStandardName <xsl:value-of select="translate( @id, $lowercase, $uppercase )"/> = createCFStandardName(
          "<xsl:value-of select="@id"/>"
         ,<xsl:choose>

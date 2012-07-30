@@ -10,25 +10,25 @@ The main class (CFStandardNames) is generated from the standard names xml docume
 using xslt. To update, replace src/main/xml/cf-standard-name-table.xml with a 
 fresh version and run mvn clean install.
 
+Standard Maven project documentation is available here:
+[http://axiomalaska.github.com/cf4j/]
+
+JavaDocs are available here:
+[http://axiomalaska.github.com/cf4j/apidocs/]
+
+JavaDocs for the standard name constants are available here:
+[http://axiomalaska.github.com/cf4j/apidocs/com/axiomalaska/cf4j/CFStandardNames.html]
+
 To use in a Maven project
 -------------------------
 
-Add the Axiom public repository to your project:
-
-    <repositories>
-      <repository>
-        <id>axiom</id>
-        <url>http://nexus.axiomalaska.com/nexus/content/repositories/public-releases</url>
-      </repository>
-    </repositories>    
-
-Then declare a dependency on cf4j:
+Declare a dependency on cf4j:
 
     <dependencies> 
       <dependency>
         <groupId>com.axiomalaska</groupId>
         <artifactId>cf4j</artifactId>
-        <version>19</version>
+        <version>19.0</version>
       </dependency>
     </dependencies>       
 

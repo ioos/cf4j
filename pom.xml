@@ -7,7 +7,7 @@
   </parent>
   <groupId>com.axiomalaska</groupId>
   <artifactId>cf4j</artifactId>
-  <version>19.0</version>
+  <version>19.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>cf4j</name>

@@ -153,6 +153,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.4</version>
             <executions>
               <execution>
                 <id>sign-artifacts</id>
@@ -161,7 +162,7 @@
                   <goal>sign</goal>
                 </goals>
                 <configuration>
-                  <keyname>8A28A600</keyname>
+                  <keyname>srstclair@gmail.com</keyname>
                 </configuration>
               </execution>
             </executions>

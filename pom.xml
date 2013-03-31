@@ -158,6 +158,9 @@
                 <goals>
                   <goal>sign</goal>
                 </goals>
+                <configuration>
+                  <keyname>8A28A600</keyname>
+                </configuration>
               </execution>
             </executions>
           </plugin>      

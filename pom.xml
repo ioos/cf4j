@@ -161,11 +161,11 @@
                 <goals>
                   <goal>sign</goal>
                 </goals>
-                <configuration>
-                  <keyname>sdlfjkhasklflk</keyname>
-                </configuration>
               </execution>
             </executions>
+            <configuration>
+              <keyname>8A28A600</keyname>
+            </configuration>
           </plugin>      
         </plugins>    
       </build>

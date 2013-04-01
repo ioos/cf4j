@@ -22,7 +22,7 @@ Declare a dependency on cf4j:
       <dependency>
         <groupId>com.axiomalaska</groupId>
         <artifactId>cf4j</artifactId>
-        <version>20.0</version>
+        <version>23.0</version>
       </dependency>
     </dependencies>       
 

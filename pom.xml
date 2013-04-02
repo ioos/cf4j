@@ -7,7 +7,7 @@
   </parent>
   <groupId>com.axiomalaska</groupId>
   <artifactId>cf4j</artifactId>
-  <version>23.1-SNAPSHOT</version>
+  <version>23.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>cf4j</name>
@@ -124,7 +124,7 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
             <configuration>
-              <keyname>8A28A600</keyname>
+              <keyname>016BC573</keyname>
             </configuration>
           </plugin>      
         </plugins>    

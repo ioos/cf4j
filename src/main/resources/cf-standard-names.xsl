@@ -27,7 +27,7 @@ public class CFStandardNames {
            <xsl:otherwise>null </xsl:otherwise>
          </xsl:choose>
         ,<xsl:choose>
-           <xsl:when test="description != ''">"<xsl:value-of select="translate( description, '&quot;', '')" />"</xsl:when>
+           <xsl:when test="description != ''">"<xsl:value-of select="translate( description, '&quot;&#10;', '')" />"</xsl:when>
            <xsl:otherwise>null</xsl:otherwise>
          </xsl:choose>
         ,<xsl:choose>

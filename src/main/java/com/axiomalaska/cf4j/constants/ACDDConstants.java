@@ -1,6 +1,10 @@
 package com.axiomalaska.cf4j.constants;
 
 public class ACDDConstants {
+    public static final String POINT = "point";
+    public static final String BINNED = "binned";    
+    public static final String NONE = "none";
+    
     //global attribute names and values
     public static final String METADATA_CONVENTIONS = "Metadata_Conventions";
     public static final String UNIDATA_DATASET_DISCOVERY_1_0 = "Unidata Dataset Discovery v1.0";
@@ -206,6 +210,7 @@ public class ACDDConstants {
      * RECOMMENDED - Describe the restrictions to data access and distribution.
      */
     public static final String LICENSE = "license";
+    public static final String LICENSE_FREELY_DISTRIBUTED = "Freely Distributed";
 
     /**
      * RECOMMENDED - This attribute provides a link to a complete metadata record for

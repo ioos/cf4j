@@ -20,8 +20,11 @@ public class NODCConstants {
     //global attribute names and values    
     public static final String NODC_TEMPLATE_VERSION = "nodc_template_version";
     public static final String NODC_POINT_TEMPLATE_1_0 = "NODC_Point_Template_v1.0";
+    public static final String NODC_PROFILE_ORTHOGONAL_TEMPLATE_1_0 = "NODC_NetCDF_Profile_Orthogonal_Template_v1.0";
     public static final String NODC_PROFILE_INCOMPLETE_TEMPLATE_1_0 = "NODC_NetCDF_Profile_Incomplete_Template_v1.0";    
+    public static final String NODC_TIMESERIES_ORTHOGONAL_TEMPLATE_1_0 = "NODC_NetCDF_TimeSeries_Orthogonal_Template_v1.0";
     public static final String NODC_TIMESERIES_INCOMPLETE_TEMPLATE_1_0 = "NODC_NetCDF_TimeSeries_Incomplete_Template_v1.0";
+    public static final String NODC_TIMESERIESPROFILE_ORTHOGONAL_TEMPLATE_1_0 = "NODC_NetCDF_TimeSeriesProfile_Orthogonal_Template_v1.0";
     public static final String NODC_TIMESERIESPROFILE_INCOMPLETE_TEMPLATE_1_0 = "NODC_NetCDF_TimeSeriesProfile_Incomplete_Template_v1.0";
     
     /**

@@ -29,6 +29,7 @@ public class CFConstants {
 
     
     //variable attributes
+    public static final String FEATURE_TYPE_INSTANCE = "feature_type_instance";
     public static final String LAT = "lat";
     public static final String LON = "lon";    
     public static final String Z = "z";
@@ -36,9 +37,7 @@ public class CFConstants {
     /**
      * RECOMMENDED
      */
-    public static final String CF_ROLE = "CF_ROLE";
-    //point_id is not a CF standard, just a consistent filler value
-    public static final String CF_ROLE_POINT_ID = "point_id";
+    public static final String CF_ROLE = "cf_role";
     public static final String CF_ROLE_TIMESERIES_ID = "timeseries_id";
     public static final String CF_ROLE_PROFILE_ID = "profile_id";
     public static final String CF_ROLE_TRAJECTORY_ID = "trajectory_id";

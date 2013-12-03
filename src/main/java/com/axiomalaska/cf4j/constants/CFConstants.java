@@ -56,7 +56,7 @@ public class CFConstants {
      * REQUIRED - Use approved CF convention with approved UDUNITS.
      */    
     public static final String UNITS = "units";
-    public static final String UNITS_TIME = "seconds since 1970-01-01 00:00:00Z";
+    public static final String UNITS_TIME = "seconds since 1970-01-01T00:00:00Z";
     public static final String UNITS_DEGREES_NORTH = "degrees_north";
     public static final String UNITS_DEGREES_EAST = "degrees_east";    
     public static final String UNITS_METERS = "m";

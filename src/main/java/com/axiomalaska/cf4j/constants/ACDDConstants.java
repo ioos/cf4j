@@ -10,9 +10,8 @@ public class ACDDConstants {
     public static final String UNIDATA_DATASET_DISCOVERY_1_0 = "Unidata Dataset Discovery v1.0";
     
     public static final String CDM_DATA_TYPE = "cdm_data_type";
-    public static final String CDM_DATA_TYPE_POINT = "Point";
     public static final String CDM_DATA_TYPE_STATION = "Station";
-    public static final String CDM_DATA_TYPE_PROFILE = "Profile";
+    public static final String CDM_DATA_TYPE_TRAJECTORY = "Trajectory";
     
     /**
      * REQUIRED    - If using CF standard name attribute for variables.

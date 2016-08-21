@@ -20,7 +20,7 @@ public class CFStandardNames {
       <xsl:when test="description != ''">
     /** <xsl:value-of select="translate( description, '&quot;', '')" /> */</xsl:when>
     </xsl:choose>
-    public static final CFStandardName <xsl:value-of select="translate( @id, $lowercase, $uppercase )"/> = createCFStandardName(
+    public static final CFStandardName <xsl:value-of select="translate( translate( @id, ' ', '' ), $lowercase, $uppercase )"/> = createCFStandardName(
          "<xsl:value-of select="@id"/>"
         ,<xsl:choose>
            <xsl:when test="canonical_units != ''">"<xsl:value-of select="canonical_units" />"</xsl:when>

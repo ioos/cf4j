@@ -2,7 +2,7 @@ package com.axiomalaska.cf4j;
 
 /**
  * CF Feature Types, version 1.6.
- * See <a href="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html">http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html</a>.
+ * See <a href="http://cfconventions.org/cf-conventions/v1.6.0/cf-conventions.html">http://cfconventions.org/cf-conventions/v1.6.0/cf-conventions.html</a>.
  * @deprecated Use netcdf-java's ucar.nc2.constants.CF$FeatureType instead
  */
 @Deprecated

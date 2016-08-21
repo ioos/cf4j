@@ -2,7 +2,7 @@ package com.axiomalaska.cf4j;
 
 /**
  * Simple class to hold info for CF standard variable names.
- * See <a href="http://cf-pcmdi.llnl.gov/documents/cf-standard-names/">http://cf-pcmdi.llnl.gov/documents/cf-standard-names/</a>.  
+ * See <a href="http://cfconventions.org/standard-names.html">http://cfconventions.org/standard-names.html</a>.
  */
 public class CFStandardName implements Comparable<CFStandardName>{
     private String name;
